@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boxshadow-generator</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <div class="container">
+      <div class="result">
+        <div id="element"></div>
+      </div>
+      <div class="sliders">
+        <div class="slider-wrapper">
+          <label for="h-shadow">Horizontal shadow: </label>
+          <input type="range" id="h-shadow" max="100" min="-100" value="0">
+        </div>
+        <div class="slider-wrapper">
+          <label for="v-shadow">Vertical shadow: </label>
+          <input type="range" id="v-shadow" max="100" min="-100" value="0">
+        </div>
+        <div class="slider-wrapper">
+          <label for="Blur-radius">Blur Radius: </label>
+          <input type="range" id="Blur-radius" max="100" min="0" value="0">
+        </div>
+        <div class="slider-wrapper">
+          <label for="Spread-radius">Spread Radius: </label>
+          <input type="range" id="Spread-radius" max="50" min="-50" value="0">
+        </div>
+        <div class="slider-wrapper">
+          <label for="Shadow-color">Shadow-color: </label>
+          <input type="color" id="Shadow-color" >
+        </div>
+        <div class="slider-wrapper">
+          <label for="Shadow-color-opacity">Shadow color opacity: </label>
+          <input type="range" id="Shadow-color-opacity" max="1" min="0" step="0.1" value="1" >
+        </div>
+        <div class="input-wrapper">
+          <label for="shadow-inset">Inset</label>
+          <input type="checkbox" id="shadow-inset">
+        </div>
+      </div>
+      <div class="code-wrapper">
+        <textarea  rows="2" id="code"></textarea>
+        <button onclick="copyCode()">Copy</button>
+      </div>
+  </div>  
+
+  <!--script-->
+  <script src="app.js"></script>
+</body>
+</html>
